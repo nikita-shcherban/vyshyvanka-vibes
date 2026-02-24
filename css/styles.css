@@ -1,0 +1,562 @@
+/* Загальні стилі */
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  color: rgba(252, 249, 249, 0.4);
+  background-color: #1c2225;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.second-title {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.45455;
+  letter-spacing: -0.03em;
+  color: #fcf9f9;
+  margin-bottom: 40px;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+input,
+textarea {
+  outline: none;
+  resize: none;
+}
+
+.section {
+  max-width: 1440px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  margin: 0 auto;
+}
+
+.btn-icon {
+  margin-left: 10px;
+}
+
+.yellow-element {
+  fill: #ecd979;
+}
+
+.grey-element {
+  fill: #fcf9f9;
+}
+
+.black-element {
+  fill: #1c2225;
+}
+
+/* Header Styles */
+
+.page-header {
+  margin-top: 16px;
+}
+
+.page-header .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6.5px;
+  padding-bottom: 6.5px;
+}
+
+.site-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  font-size: 14px;
+  line-height: 1.28571;
+  text-transform: uppercase;
+  margin-left: 60px;
+}
+
+.nav-link {
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.nav-link,
+.address-link {
+  color: #fcf9f9;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ecd979;
+}
+
+.contacts-wrapper {
+  display: flex;
+  margin-left: auto;
+  gap: 20px;
+}
+
+.address-links {
+  margin-left: auto;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+}
+
+.address-link {
+  font-size: 14px;
+  line-height: 1.42857;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 14px 28px;
+}
+
+.address-links:hover,
+.address-links:focus {
+  border-color: #ecd979;
+}
+
+.header-social {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.icon-box {
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 8px;
+  background-color: rgba(252, 249, 249, 0.1);
+}
+
+.icon-box:hover,
+.icon-box:focus {
+  border-color: #ecd979;
+  background-color: transparent;
+}
+
+.header-social .header-icon {
+  fill: #fcf9f9;
+}
+
+/* Main Section 1 (Page Hero) */
+
+.page-hero {
+  padding-top: 100px;
+  padding-bottom: 75px;
+}
+
+.page-hero .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title-place {
+  display: flex;
+  flex-direction: column;
+  max-width: 632px;
+  margin-top: 66px;
+  margin-left: 40px;
+}
+
+.hero-title {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.15625;
+  letter-spacing: -0.03em;
+  color: #fcf9f9;
+  width: 630px;
+}
+
+.color-accent {
+  color: #ecd979;
+}
+
+.hero-order {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #fcf9f9;
+  text-align: center;
+  line-height: auto;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 14px 39px;
+  margin-left: 141px;
+  margin-top: 40px;
+  width: 168px;
+  height: 50px;
+}
+
+.hero-order:hover,
+.hero-order:focus {
+  border-color: #ecd979;
+}
+
+.star-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 115px;
+  margin-left: auto;
+  margin-top: 66px;
+}
+
+.star-description {
+  text-align: center;
+}
+
+.hero-pic {
+  border-radius: 4px;
+}
+
+/* Main Section 2 (Page About Us) */
+
+.page-about-us {
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.about-us-element {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.page-about-us .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-about-us {
+  align-self: center;
+  max-width: 481px;
+}
+
+.description-about-us:first-of-type {
+  padding-bottom: 20px;
+}
+
+.about-us-pic {
+  margin-left: auto;
+  border-radius: 4px;
+}
+
+/* Main Section 3 (Page Our Collection) */
+
+.page-our-collection {
+  position: relative;
+}
+
+.collection-element {
+  width: 169px;
+  height: 300px;
+  position: absolute;
+  overflow: hidden;
+  top: 301px;
+  z-index: -1;
+}
+
+.collection-element .yellow-element {
+  transform: translateX(-170px);
+}
+
+.collection-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.collection-item {
+  width: calc((100% - 20px * 2) / 3);
+}
+
+.collection-wrapper {
+  padding-top: 18px;
+}
+
+.vyshyvanka-name {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #fcf9f9;
+}
+
+.vyshyvanka-price {
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+.page-our-collection .second-title {
+  text-align: center;
+}
+
+.collection-pic {
+  border-radius: 4px;
+}
+
+/* Main Section 4 (Page Full View Photo) */
+
+.page-fullviewphoto {
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fullviewphoto {
+  max-width: 100vw;
+  min-height: 776px;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+/* Main Section 5 (Customer Order) */
+
+.page-order {
+  position: relative;
+}
+
+.page-order-element {
+  position: absolute;
+  z-index: -1;
+  width: 325px;
+  height: 484px;
+  bottom: 75px;
+  overflow: hidden;
+}
+
+.page-order-element .grey-element {
+  transform: translateX(-221px);
+}
+
+.page-order .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.order-pic {
+  align-self: flex-start;
+  border-radius: 4px;
+}
+
+.page-order .second-title {
+  width: 666px;
+  line-height: 1.31818;
+}
+
+.order-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-input {
+  width: 508px;
+  padding: 14px 16px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  background-color: transparent;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fcf9f9;
+}
+
+.order-input:focus,
+.order-input:focus-within {
+  border: 1px solid rgba(252, 249, 249, 0.6);
+}
+
+.order-input::placeholder {
+  letter-spacing: -0.02em;
+}
+
+textarea.order-input {
+  margin-bottom: 40px;
+  height: 196px;
+}
+
+.order-btn {
+  width: 168px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 14px 39px;
+  background-color: #1c2225;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fcf9f9;
+}
+
+.order-btn:hover,
+.order-btn:focus {
+  border-color: #ecd979;
+}
+
+/* Main Section 6 (Testimonials) */
+
+.page-testimonials {
+  padding-top: 75px;
+}
+
+.page-testimonials .second-title {
+  margin-bottom: 64px;
+}
+
+.testimonials-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+.testimonials-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 4px;
+  box-shadow: 0 2px 32px 4px rgba(18, 20, 23, 0.02);
+  flex-basis: calc((100% - 26px * 2) / 3);
+}
+
+.testimonials-name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #fcf9f9;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.testimonials-pic {
+  border-radius: 50%;
+  box-shadow: 0 1px 4px 0 rgba(16, 24, 40, 0.06);
+  object-fit: cover;
+  margin-top: -24px;
+  margin-bottom: 14px;
+}
+
+.testimonials-text {
+  letter-spacing: normal;
+  text-align: center;
+  padding: 0 18px 18px 18px;
+}
+
+/* Footer Styles */
+
+.page-footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 150px;
+  border-top: 1px solid rgba(252, 249, 249, 0.1);
+}
+
+.footer-element {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  width: 496px;
+  height: 363px;
+  right: 0;
+  top: 0;
+}
+
+.footer-element .yellow-element {
+  transform: translateY(-61px);
+}
+
+.page-footer .container {
+  justify-content: flex-start;
+}
+
+.page-footer .nav-links {
+  justify-content: flex-start;
+  margin-left: 0;
+  margin-top: 23px;
+  margin-bottom: 100px;
+}
+
+.footer-text {
+  font-size: 64px;
+  line-height: 1.15625;
+  letter-spacing: -0.03em;
+  color: #fcf9f9;
+  max-width: 754px;
+  margin-bottom: 40px;
+}
